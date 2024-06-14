@@ -11,6 +11,19 @@
       "url": "http://localhost:3000",
       "webRoot": "${workspaceFolder}"
     }
+    {
+      "type": "pwa-chrome",
+      "request": "attach",
+      "name": "Attach to Chromium",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${workspaceFolder}/src/*",
+        "webpack:///*": "${workspaceFolder}/*",
+        "webpack:///./*": "${workspaceFolder}/*"
+      }
+    }
     // {
     //   "name": "Debug Jest Tests",
     //   "type": "node",
